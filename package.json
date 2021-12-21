@@ -1,0 +1,50 @@
+{
+  "name": "yermolim-starter-template",
+  "version": "0.0.1",
+  "description": "starter template typescript-rollup",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildts": "tsc",
+    "buildru": "rollup -c",
+    "build": "npm run buildts && npm run buildru",
+    "mpublish": "npm version minor && npm publish",
+    "ppublish": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yermolim/ts-rollup-starter.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "author": "Volodymyr Yermolenko <yermolim@gmail.com> (https://github.com/yermolim)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yermolim/ts-rollup-starter/issues"
+  },
+  "homepage": "https://github.com/yermolim/ts-rollup-starter#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-strip": "^2.1.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "rollup": "^2.61.1",
+    "rollup-plugin-css-porter": "^1.0.2",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-license": "^2.6.0",
+    "rollup-plugin-node-externals": "^3.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  }
+}
